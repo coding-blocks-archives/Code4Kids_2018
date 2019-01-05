@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions</title>
+
+	<style type="text/css">
+		div {
+			background-color: red;
+		margin: 30px;
+		height: 50px;
+		width: 50px;
+		border: solid blue 2px;
+		}
+
+		
+		#id1:hover{
+			transform: translate(100px,0px) ;
+			background-color: green;
+			transition: linear 1s;
+		}
+		#id2:hover{
+			transform: translate(100px,0px) ;
+			background-color: green;
+			transition: ease-in 1s;
+		}
+		#id3:hover{
+			transform: translate(100px,0px) ;
+			background-color: green;		
+			transition: ease 1s;
+		}
+		#id4:hover{
+			transform: translate(100px,0px) ;
+			background-color: green;		
+			transition: ease-out 1s;
+		}
+		#id5:hover{
+			transform: translate(100px,0px) ;
+			background-color: green;
+			transition: ease-in-out 1s;
+		}
+
+	</style>
+</head>
+<body>
+<div id="id1"></div>
+<div id="id2"></div>
+<div id="id3"></div>
+<div id="id4"></div>
+<div id="id5"></div>
+<div id="id6"></div>
+</body>
+</html>
