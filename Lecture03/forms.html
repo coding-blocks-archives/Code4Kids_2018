@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+
+<form>
+	<label for="name">Name: </label>
+	<input type="text" id="name" required placeholder="Enter your name">
+<br>
+	<label for="number">Number</label>
+	<input type="number" id="number" min="1" max="10">
+<br>
+	<label for="email">Email: </label>
+	<input type="email" id="email">
+<br>
+	<label for="password">Password: </label>
+	<input type="password" id="password">
+<br>
+<label for="password">Color: </label>
+	<input type="color" id="password">
+<br>
+<label for="password">date: </label>
+	<input type="date" id="password">
+<br>
+<label for="password">time: </label>
+	<input type="time" id="password">
+<br>
+<label for="text">Text</label>
+<textarea rows="4" cols="50" id="text"></textarea>
+<br>Are you a : 
+teacher<input type="radio" name="a">&nbsp;&nbsp;
+parent<input type="radio" name="a">&nbsp;&nbsp;
+student<input type="radio" name="a">&nbsp;&nbsp;
+
+<!--
+	&nbsp; -> one space, because browser by default taakes only one space
+	-->
+
+
+<br>
+this is some text &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abc
+
+
+<input type="checkbox" name="">singing
+<input type="checkbox" name="">drawing
+<input type="checkbox" name="">dancing<input type="checkbox" name="">reading
+<br>
+Class: 
+<select>
+	<option>VII</option>
+	<option>VIII</option>
+	<option>IX</option>
+	<option>X</option>
+</select>
+<br>
+0<input type="range" name="" min="0" max="100">100
+<br>
+<input type="Submit" name="">
+<input type="reset" name="">
+</form>
+
+<button>click here</button>
+
+</body>
+</html>
