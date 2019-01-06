@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<style type="text/css">
+		div {
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+			animation: move 10s infinite;
+		}
+
+		@keyframes move{
+			0%{
+
+			}
+			50% {
+				background-color: red;
+				transform: translateX(200px);
+				border-radius: 200%;
+			}
+			100%{
+				transform: translateX(0px);
+				background-color: blue;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+	</div>
+
+</body>
+</html>

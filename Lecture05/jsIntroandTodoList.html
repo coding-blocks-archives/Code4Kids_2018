@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Intro</title>
+</head>
+<body>
+	<h1>My Todolist</h1>
+	<input id="inp" type="text">
+	<button id="btn">Add</button>
+<!-- 	<button id="btn2">Click Here</button>
+ -->
+ 	<ol id="list">
+ 		
+ 	</ol>
+	<script type="text/javascript">
+
+
+
+		// To print to console		
+		// console.log("Hello There")
+
+		// To show an alert box
+		// window.alert("This is an alert box")
+
+		// To get an element from HTML by id
+		// document.getElementById("inp")
+
+		// console.log(document.getElementById("btn"))
+
+		// let x = document.getElementById("btn")
+
+		// // Onclick specifies behaviour on clicking that element
+		// x.onclick = a
+
+		// let z = document.getElementById("btn2")
+
+		// z.onclick = a
+
+		// function a () {
+		// 	let y = document.getElementById("inp")
+		// 	// value is used to get the value of the element
+		// 	console.log(y.value)
+		// }
+
+		// function printToConsole(str){
+		// 	console.log(str)
+		// }
+
+		// printToConsole("This is a variable");
+
+
+
+		let button = document.getElementById("btn")
+
+		button.onclick = function() {
+			let input = document.getElementById("inp")
+			let list = document.getElementById("list")
+			// console.log(list.innerHTML)
+			let previousValue = list.innerHTML
+			list.innerHTML =  "<li>" + input.value + "</li>" + previousValue;
+			// console.log(list.innerHTML)
+		}
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
